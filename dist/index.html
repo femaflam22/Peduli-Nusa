@@ -1,0 +1,198 @@
+<!doctype html>
+<html>
+
+<head>
+    <!-- ... -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="style.css" rel="stylesheet">
+    <script src="script.js"></script>
+</head>
+
+<body class="min-h-screen">
+    <header class="bg-cardgray px-12 sm:px-20 py-5 relative" id="home">
+        <!-- navbar -->
+        <nav class="flex justify-between flex-col sm:flex-row">
+            <div class=" flex items-center justify-between pb-5 sm:pb-0 border-b sm:border-b-0 ">
+                <div>
+                    <h1 class="text-cardwhite text-2xl font-semibold tracking-wider uppercase ">peduli nusa</h1>
+                </div>
+                <div>
+                    <button class="focus:outline-none text-cardwhite block sm:hidden btn " onclick="menu() ">
+                        <svg class="w-6 h-6 " xmlns="http://www.w3.org/2000/svg " class="h-5 w-5 " viewBox="0 0 20 20 " fill="currentColor ">
+                            <path fill-rule="evenodd " d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10
+            8.586 8.707 7.293z " clip-rule="evenodd " />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <!-- buat pas screen lg -->
+            <div class="hidden sm:flex ">
+                <a href="#home " class="text-cardwhite text-base py-2 px-3 :ml-5 hover:opacity-60 ">Home</a>
+                <a href="#info " class="text-cardwhite text-base py-2 px-3 ml-5 hover:opacity-60 ">Info</a>
+                <a target="_blank" href="https://mail.google.com/mail/u/0/?fs=1&to=peduliNusa@gmail.com&tf=cm" class="font-medium text-cardwhite py-2 px-3 ml-5 bg-lightgray rounded-lg hover:opacity-90 ">Bergabung</a>
+            </div>
+
+            <!-- buat pas screen sm -->
+            <div class="sm:hidden flex flex-col sm:flex-row pt-5 sm:pt-0 navbar ">
+                <a href="#home " class="text-cardwhite text-base mb-5 sm:mb-0 py-2 px-0 sm:px-3 ml-0 sm:ml-5 hover:opacity-60 ">Home</a>
+                <a href="#info " class="text-cardwhite text-base mb-5 sm:mb-0 py-2 px-0 sm:px-3 ml-0 sm:ml-5 hover:opacity-60 ">Info</a>
+                <a href="# " class="sm:font-medium text-cardwhite mb-5 sm:mb-0 py-2 px-0 sm:px-3 ml-0 sm:ml-5 bg-transparent sm:bg-lightgray rounded-lg hover:opacity-90 ">Bergabung</a>
+            </div>
+        </nav>
+        <!--  -->
+
+        <!-- hero -->
+        <div class="container pb-24 ">
+            <div class="block ">
+                <div class="flex flex-col lg:flex-row mt-14 md:mt-16 ">
+                    <div class="pt-0 md:pt-14 lg:pt-20 w-full lg:w-2/3 ">
+                        <div>
+                            <div class="text-2xl md:text-5xl font-semibold text-cardwhite tracking-wide leading-7">Jadilah Pahlawan Bagi Mereka Para Penerus Bangsa!</div>
+                            <div class="flex flex-wrap mt-5 sm:mt-16 gap-5 md:gap-10 ">
+                                <div class="flex mt-3 xl:mt-0 ">
+                                    <img src="img/icon1.png " alt="Buku Pelejaran " class="w-14 h-14 mr-2 ">
+                                    <p><span class="text-xs text-cardwhite ">Kami Membutuhkan</span>
+                                        <br><span class="font-bold text-cardwhite tracking-normal md:tracking-wider ">Buku Pelajaran</span>
+                                    </p>
+                                </div>
+                                <div class="flex mt-3 xl:mt-0 ">
+                                    <img src="img/icon2.png " alt="Buku Pelejaran " class="w-14 h-14 mr-2 ">
+                                    <p><span class="text-xs text-cardwhite ">Kami Membutuhkan</span>
+                                        <br><span class="font-bold text-cardwhite tracking-wider ">Buku Tulis</span>
+                                    </p>
+                                </div>
+                                <div class="flex mt-3 xl:mt-0 ">
+                                    <img src="img/icon3.png " alt="Buku Pelejaran " class="w-14 h-14 mr-2 ">
+                                    <p><span class="text-xs text-cardwhite ">Kami Membutuhkan</span>
+                                        <br><span class="font-bold text-cardwhite tracking-wider ">Alat Tulis</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pt-4 hidden lg:block lg:w-1/3 ">
+                        <img src="img/hero.png " class="opacity-70 ">
+                    </div>
+                </div>
+                <div class="absolute bottom-0 right-0 bg-lightgray w-auto h-auto px-3 sm:px-5 py-5 sm:py-3 ">
+                    <div class="flex flex-col sm:flex-row gap-4 items-center ">
+                        <div class="flex ">
+                            <img src="img/ct1.png " alt="peduli_nusa " title="peduli_nusa " width="25 ">
+                            <p class="text-cardwhite text-sm font-semibold italic hidden sm:block ">peduli_nusa</p>
+                        </div>
+                        <div class="flex ">
+                            <img src="img/ct2.png " alt="peduli_nusa " title="peduli_nusa " width="25 ">
+                            <p class="text-cardwhite text-sm font-semibold italic hidden sm:block ">peduli_nusa</p>
+                        </div>
+                        <div class="flex ">
+                            <img src="img/ct3.png " alt="peduli_nusa " title="peduliNusa@gmail.com " width="25 ">
+                            <p class="text-cardwhite text-sm font-semibold italic hidden sm:block ">peduliNusa@gmail.com</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- info lebih tepatnya about -->
+    <section id="info" class="px-12 lg:px-20 my-12 sm:my-20 mt-5">
+        <div class="container mx-auto">
+            <div class="block ">
+                <div class="flex flex-col md:flex-row ">
+                    <div class="w-full md:w-1/2 ">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3963.013428485806!2d106.84164251450628!3d-6.645253366809609!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69c89505b4c37d%3A0x307fc4a38e65fa2b!2sSMK%20Wikrama%20Bogor!5e0!3m2!1sid!2sid!4v1618728750525!5m2!1sid!2sid "
+                            style="border:0; " class="shadow-2xl rounded-lg mb-12 lg:mb-0 md:max-w-lg w-full h-60 md:h-80 mt-0 md:mt-4 lg:mt-1.5" allowfullscreen=" " loading="lazy "></iframe>
+                    </div>
+                    <div class="w-full md:w-1/2 ml-0 md:ml-10 xl:ml-0">
+                        <div class="text-xl md:text-2xl lg:text-3xl font-semibold text-titlegray pb-4 leading-7 mt-0 xl:mt-2">Peduli Nusa</div>
+                        <p class="text-textblack text-xs lg:text-sm text-justify leading-5">
+                            merupakan sebuah organisasi yang didirikan sejak tahun 2021 atas ide Fema Flamelina Putri. Dengan visi misi memakmurkan pendidikan sampai ke-pelosok negeri. Peduli Nusa membantu anak-anak yang tidak mampu untuk bersekolah dengan menyalurkan buku-buku
+                            pelajaran juga perlengkapan lainnya untuk belajar. Selain itu, Peduli Nusa juga mengadakan event-event berupa kunjungan ke beberapa desa yang minim pendidikan. Disana, Peduli Nusa dan tim relawan akan memberikan pengajaran
+                            materi-materi sekolah juga penyaluran buku-buku maupun keperluan belajar lainnya kepada anak-anak. Peduli Nusa juga menyediakan beasiswa bagi anak-anak yang memiliki skill dan bakat yang perlu dikembangkan. Beasiswa berupa
+                            dana untuk biaya ia sekolah selama 3 tahun.
+                            <br>
+                            <br><span class="font-semibold text-sm sm:text-base ">Untuk mengetahui lebih lanjut lagi, kunjungi <span class="italic">basecamp</span> kami yuk!</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- tim relawan -->
+    <section class="my-12 sm:my-20 pt-0 lg:pt-10 mx-auto lg:pl-0 px-6 md:px-0" style="max-width: 800px;">
+        <div class="text-xl md:text-2xl lg:text-3xl font-semibold mb-12 text-center text-textblack leading-7">Relawan <span class="text-titlegray">Peduli Nusa</span></div>
+        <div>
+            <div class="flex flex-row flex-wrap justify-center lg:justify-start">
+                <img src="img/o1.png" alt="" srcset="" class="w-14 h-14 md:h-16 md:w-16 lg:h-20 lg:w-20 rounded-full mr-4 mb-4 md:mb-0">
+                <img src="img/o2.png" alt="" srcset="" class="w-14 h-14 md:h-16 md:w-16 lg:h-20 lg:w-20 rounded-full mr-4 mb-4 md:mb-0">
+                <img src="img/o3.png" alt="" srcset="" class="w-14 h-14 md:h-16 md:w-16 lg:h-20 lg:w-20 rounded-full mr-4 mb-4 md:mb-0">
+                <img src="img/o4.png" alt="" srcset="" class="w-14 h-14 md:h-16 md:w-16 lg:h-20 lg:w-20 rounded-full mr-4 mb-4 md:mb-0">
+                <img src="img/o5.png" alt="" srcset="" class="w-14 h-14 md:h-16 md:w-16 lg:h-20 lg:w-20 rounded-full mr-4 mb-4 md:mb-0">
+                <img src="img/o6.png" alt="" srcset="" class="w-14 h-14 md:h-16 md:w-16 lg:h-20 lg:w-20 rounded-full mr-4 mb-4 md:mb-0">
+                <img src="img/o7.png" alt="" srcset="" class="w-14 h-14 md:h-16 md:w-16 lg:h-20 lg:w-20 rounded-full mr-4 mb-4 md:mb-0">
+                <img src="img/o8.png" alt="" srcset="" class="w-14 h-14 md:h-16 md:w-16 lg:h-20 lg:w-20 rounded-full mr-4 mb-4 md:mb-0">
+            </div>
+        </div>
+    </section>
+
+    <!-- step -->
+    <section class="px-10 lg:px-0 mb-20 pb-5">
+        <div class="text-xl md:text-2xl lg:text-3xl font-semibold mb-12 text-center text-textblack leading-7">Ingin Ikut <span class="text-titlegray">Berpartisipasi?</span> Ikuti Caranya Yuk!</div>
+        <div class="shadow-2xl px-10 md:px-20 py-12 md:py-8 bg-cardwhite rounded-xl mx-auto flex flex-wrap justify-center md:justify-between gap-10 md:gap-0" style="max-width:850px;">
+            <div class="flex flex-col">
+                <div class="w-32 md:w-36 h-32 md:h-36 bg-cardgray relative justify-center align-center rounded-lg">
+                    <img src="img/chat.png" alt="chat" srcset="" class="absolute">
+                </div>
+                <div class="w-32 md:w-36 h-auto sm:h-12 justify-center align-center mt-4">
+                    <p class="text-center text-titlegray text-xs sm:text-sm font-semibold tracking-wide">Hubungi akun media sosial Peduli nusa</p>
+                </div>
+            </div>
+            <div class="flex flex-col">
+                <div class="w-32 md:w-36 h-32 md:h-36 bg-cardgray relative justify-center align-center rounded-lg">
+                    <img src="img/kirim.png" alt="kirim" srcset="" class="absolute">
+                </div>
+                <div class="w-32 md:w-36 h-auto sm:h-12 justify-center align-center mt-4">
+                    <p class="text-center text-titlegray text-xs sm:text-sm font-semibold tracking-wide">Kirim barang ke alamat yang telah diberikan</p>
+                </div>
+            </div>
+            <div class="flex flex-col">
+                <div class="w-32 md:w-36 h-32 md:h-36 bg-cardgray relative justify-center align-center rounded-lg">
+                    <img src="img/read.png" alt="buku" srcset="" class="absolute">
+                </div>
+                <div class="w-36 h-auto sm:h-12 justify-center align-center mt-4">
+                    <p class="text-center text-titlegray text-xs sm:text-sm font-semibold tracking-wide">Barang akan dikirimkan kepada anak-anak</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <!-- top (sponsor) -->
+    <section class="bg-cardgray w-full px-12 sm:px-20 py-14 flex flex-col md:flex-row justify-start md:justify-between">
+        <div class="flex flex-col lg:flex-row gap-2">
+            <div class="text-cardwhite text-md tracking-wide">Didukung Oleh:</div>
+            <div class="flex flex-wrap gap-3 lg:gap-2 mx-auto md:mx-0">
+                <img src="img/s1.png" alt="Kemendikbud" class="w-12 sm:w-16 pt-4">
+                <img src="img/s2.png" alt="Kemendikbud" class="w-12 sm:w-16 pt-4">
+                <img src="img/s3.png" alt="Kemendikbud" class="w-12 sm:w-16 pt-4">
+                <img src="img/s4.png" alt="Kemendikbud" class="w-12 sm:w-16 pt-4">
+            </div>
+        </div>
+        <div class="flex flex-col lg:flex-row gap-2 mt-6 md:mt-0">
+            <div class="text-cardwhite text-md tracking-wide">Gambar dan Logo:</div>
+            <div class="flex flex-wrap gap-3 lg:gap-2 mx-auto md:mx-0">
+                <img src="img/s5.png" alt="Kemendikbud" class="w-24 pt-4">
+                <img src="img/s6.png" alt="Kemendikbud" class="w-24 pt-4">
+            </div>
+        </div>
+    </section>
+    <!-- bottom (copyright) -->
+    <section class="w-full bg-lightgray py-3 text-center">
+        <p class="text-cardwhite text-lg font-semibold">Peduli Nusa &copy; 2021</p>
+    </section>
+</body>
+
+</html>
